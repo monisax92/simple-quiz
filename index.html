@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Simple quiz</title>
+</head>
+<body>
+  <div class="wrapper">
+  <div class="intro mt-4 text-center">
+    <div class="container container-top">
+      <h2 class="display-3">Simple Quiz</h2>
+    </div>
+  </div>
+
+  <div class="result d-none">
+    <div class="container text-center">
+      <p class="p-4"> Your score: <span></span>%
+    </div>
+  </div>
+
+  <div class="quiz mb-4">
+    <div class="container container-bottom">
+      <h2 class="text-center text-muted">Select your answers below</h2>
+      <form class="quiz-form">
+        <div class="question">
+          <hr>
+          <h3>Question 1</h3>
+          <p>Which HTML tag do we use to attach stylesheet to our document?</p>
+          <div class="option">
+            <label>
+              <input type="radio" name="q1" value="A">
+              A. &lt;link&gt;
+            </label>
+          </div>
+          <div class="option">
+            <label>
+              <input type="radio" name="q1" value="B">
+              B. &lt;script&gt;
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <hr>
+          <h3>Question 2</h3>
+          <p>Which HTML tag do we use to group elements?</p>
+          <div class="option">
+            <label>
+              <input type="radio" name="q2" value="A">
+              A. &lt;hr&gt;
+            </label>
+          </div>
+          <div class="option">
+            <label>
+              <input type="radio" name="q2" value="B">
+              B. &lt;div&gt;
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <hr>
+          <h3>Question 3</h3>
+          <p>How many levels of headings do we have in HTML (h1, h2, ...)?</p>
+          <div class="option">
+            <label>
+              <input type="radio" name="q3" value="A">
+              A. 4
+            </label>
+          </div>
+          <div class="option">
+            <label>
+              <input type="radio" name="q3" value="B">
+              B. 6
+            </label>
+          </div>
+        </div>
+
+        <div class="mx-auto" style="text-align: center;">
+          <input type="submit" class="btn btn-warning my-4" value="Submit answers">
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
